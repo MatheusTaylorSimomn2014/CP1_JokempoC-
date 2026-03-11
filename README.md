@@ -1,8 +1,9 @@
 # CP1_JokempoC-
 
-# Jokempo - Versão CSharp
+# Jokempo - Versão CSharp 
 
-Este é um jogo de Jokempo (Pedra, Papel e Tesoura) desenvolvido em C# como projeto da disciplina.
+Este é um jogo de Jokempo (Pedra, Papel e Tesoura) desenvolvido em C# para a matéria C Software Development.
+
 
 ## Funcionalidades implementadas
 
