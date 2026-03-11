@@ -16,7 +16,7 @@ Este é um jogo de Jokempo (Pedra, Papel e Tesoura) desenvolvido em C# para a ma
 ## NOME e RM
 
 - Matheus Taylor, RM556211 (3ESPF)
-
+- Henrique maldonado, RM557270
 ## Como executar
 
 1. Clone o repositório
