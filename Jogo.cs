@@ -24,12 +24,12 @@ namespace Jokempo
         {
             MostrarBoasVindas();
 
-            // Criar primeiro jogador
+           
             string nome1 = LerNomeJogador(1);
             _jogadorAtual = new Jogador(nome1);
             jogadores.Add(_jogadorAtual);
 
-            // Perguntar se quer jogar contra CPU ou outro jogador
+         
             bool jogandoContraCpu = ConsoleHelper.LerSimNao("\nDeseja jogar contra CPU? (S/N): ");
 
             if (jogandoContraCpu)
@@ -38,12 +38,12 @@ namespace Jokempo
             }
             else
             {
-                string nome2 = LerNomeJogador(2, new[] { nome1 }); // não pode ter nome igual ao primeiro
+                string nome2 = LerNomeJogador(2, new[] { nome1 }); 
                 _jogador2 = new Jogador(nome2);
                 jogadores.Add(_jogador2);
             }
 
-            // Loop principal do jogo
+            
             bool continuando = true;
             while (continuando)
             {
@@ -160,7 +160,7 @@ namespace Jokempo
             var novoJogador = new Jogador(nome2);
             _jogador2 = novoJogador;
 
-            // Se estava jogando contra CPU, substituir
+            
             bool cpuJaExistia = jogadores.Count > 1 && jogadores[1].Nome == "CPU";
             if (cpuJaExistia)
             {
@@ -182,17 +182,16 @@ namespace Jokempo
             ConsoleHelper.EscreverLinha("              NOVA RODADA - JOKEMPÔ", ConsoleColor.Yellow);
             ConsoleHelper.EscreverLinha("═══════════════════════════════════════════════════\n", ConsoleColor.Yellow);
 
-            // Mostrar opções de jogada
+            
             ConsoleHelper.EscreverLinha("Escolha sua jogada:", ConsoleColor.Cyan);
             ConsoleHelper.EscreverLinha("  1 - ✊ PEDRA", ConsoleColor.Cyan);
             ConsoleHelper.EscreverLinha("  2 - ✋ PAPEL", ConsoleColor.Cyan);
             ConsoleHelper.EscreverLinha("  3 - ✌ TESOURA", ConsoleColor.Cyan);
 
-            // Ler jogada do jogador
             Opcao jogadaJogador = LerJogadaValida(jogadorAtual.Nome);
             ConsoleHelper.EscreverLinha($"\n{jogadorAtual.Nome} escolheu: {ObterEmoji(jogadaJogador)} {jogadaJogador}", ConsoleColor.Green);
 
-            // Jogada da CPU ou jogador 2
+            
             Opcao jogadaAdversario;
             if (jogador2.Nome == "CPU")
             {
@@ -207,7 +206,7 @@ namespace Jokempo
                 ConsoleHelper.EscreverLinha($"\n{jogador2.Nome} escolheu: {ObterEmoji(jogadaAdversario)} {jogadaAdversario}", ConsoleColor.Green);
             }
 
-            // Determinar resultado
+            
             ConsoleHelper.EscreverLinha("\n───────────────────────────────────────────", ConsoleColor.DarkGray);
             DeterminarResultado(jogadaJogador, jogadaAdversario);
             ConsoleHelper.EscreverLinha("───────────────────────────────────────────\n", ConsoleColor.DarkGray);
@@ -278,7 +277,7 @@ namespace Jokempo
 
         private void TrocarJogador()
         {
-            // Listar todos os jogadores humanos (excluir CPU)
+           
             var humanos = jogadores.Where(j => j.Nome != "CPU").ToList();
             if (humanos.Count < 2)
             {
@@ -304,19 +303,18 @@ namespace Jokempo
                 return;
             }
 
-            // Se o escolhido for o adversário atual, apenas troca os papéis
             if (novoAtual == jogador2)
             {
-                _jogadorAtual = jogador2;
-                _jogador2 = jogadorAtual; // na verdade agora o antigo atual vira adversário
+                Jogador temp = _jogadorAtual;
+                _jogadorAtual = _jogador2;
+                _jogador2 = temp; 
                 ConsoleHelper.EscreverLinha($"\nAgora você é {jogadorAtual.Nome} e o adversário é {jogador2.Nome}.", ConsoleColor.Green);
             }
             else
             {
-                // O novo atual é um jogador que não é nem o atual nem o adversário.
-                // Mantemos o adversário atual, e o antigo atual volta para a lista.
+
                 _jogadorAtual = novoAtual;
-                // Se o antigo atual era CPU? Não, pois só humanos na lista. OK.
+
                 ConsoleHelper.EscreverLinha($"\nAgora você é {jogadorAtual.Nome}. O adversário continua sendo {jogador2.Nome}.", ConsoleColor.Green);
             }
             ConsoleHelper.Pausar();
