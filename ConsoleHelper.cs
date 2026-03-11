@@ -5,28 +5,21 @@ namespace Jokempo
     public static class ConsoleHelper
     {
         public static void EscreverLinha(string mensagem, ConsoleColor cor = ConsoleColor.Gray)
-        { 
+        {
             Console.ForegroundColor = cor;
             Console.WriteLine(mensagem);
-            Console.RestColor();
+            Console.ResetColor();
         }
 
         public static void Escrever(string mensagem, ConsoleColor cor = ConsoleColor.Gray)
-        { 
+        {
             Console.ForegroundColor = cor;
-            Console.WriteLine(mensagem);
-            Console.RestColor();
+            Console.Write(mensagem);
+            Console.ResetColor();
         }
 
-        public static void LerString(string prompt, ConsoleColor cor = ConsoleColor.Gray)
-        { 
-            Console.ForegroundColor = cor;
-            Console.WriteLine(mensagem);
-            Console.RestColor();
-        }
-
-        public static void LerString(string prompt, ConsoleColor cor = ConsoleColor.Green)
-        { 
+        public static string LerString(string prompt, ConsoleColor cor = ConsoleColor.Green)
+        {
             Escrever(prompt, cor);
             return Console.ReadLine()?.Trim() ?? "";
         }
@@ -65,4 +58,4 @@ namespace Jokempo
             Console.ReadLine();
         }
     }
-}       
+}
