@@ -6,11 +6,11 @@ Este é um jogo de Jokempo (Pedra, Papel e Tesoura) desenvolvido em C# como proj
 
 ## Funcionalidades implementadas
 
-- ✅ Modularização do código (separação de responsabilidades)
-- ✅ Validação de entrada de dados
-- ✅ Gravação do nome dos jogadores
-- ✅ Troca de jogador durante a partida
-- ✅ Exibição de estatísticas individuais e globais
+- Modularização do código (separação de responsabilidades)
+- Validação de entrada de dados
+- Gravação do nome dos jogadores
+- Troca de jogador durante a partida
+- Exibição de estatísticas individuais e globais
 
 ## NOME e RM
 
