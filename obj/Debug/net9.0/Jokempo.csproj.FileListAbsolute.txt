@@ -1,0 +1,4 @@
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Debug\net9.0\Jokempo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Debug\net9.0\Jokempo.AssemblyInfoInputs.cache
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Debug\net9.0\Jokempo.AssemblyInfo.cs
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Debug\net9.0\Jokempo.csproj.CoreCompileInputs.cache

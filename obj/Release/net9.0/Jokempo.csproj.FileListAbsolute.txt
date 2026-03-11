@@ -1,0 +1,14 @@
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\bin\Release\net9.0\Jokempo.exe
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\bin\Release\net9.0\Jokempo.deps.json
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\bin\Release\net9.0\Jokempo.runtimeconfig.json
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\bin\Release\net9.0\Jokempo.dll
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\bin\Release\net9.0\Jokempo.pdb
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\Jokempo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\Jokempo.AssemblyInfoInputs.cache
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\Jokempo.AssemblyInfo.cs
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\Jokempo.csproj.CoreCompileInputs.cache
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\Jokempo.dll
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\refint\Jokempo.dll
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\Jokempo.pdb
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\Jokempo.genruntimeconfig.cache
+C:\Users\labsfiap\Downloads\CP1_JokempoC--main\CP1_JokempoC--main\obj\Release\net9.0\ref\Jokempo.dll
